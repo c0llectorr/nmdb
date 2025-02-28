@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" class="smoothscroll">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NMDB Movie or TV Show Page">
+    <meta name="keywords" content="NMDB, Movie, TV Show, Trailer, Review">
+    <meta name="author" content="Your Name">
+
+    <title>Breaking Bad - NMDB</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway&display=swap" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet" /> <!--Bootstrap-->
+    <link rel="stylesheet" href="fonts/style.css" type="text/css" />
+    <link rel="stylesheet" href="Consolidated.css" type="text/css">
+
+    <style>
+        .hero-section {
+            width: 97.4%;
+            background-color: var(--medium-purple);
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 7px 16px;
+            margin: 27px 1.3% 80px 1.3%;
+            border: 4px solid var(--pink);
+            border-radius: 10px;
+            max-width: 1300px;
+        }
+
+            .hero-section h1 {
+                display: inline-block;
+                font-size: 50px;
+                background-color: var(--dark-purple);
+                color: var(--pink);
+                border: 2px solid var(--pink);
+                border-radius: 8px;
+                margin: 12px 28px 12px 2px;
+                padding: 12px 16px;
+                font-family: Montserrat;
+                transition: 0.35s;
+                min-width: 175px;
+                max-width: 25%;
+                height: 473px;
+            }
+
+                .hero-section h1:hover {
+                    background-color: var(--pink);
+                    color: var(--dark-purple);
+                }
+
+        #bp {
+            height: auto;
+            max-height: 195px;
+        }
+
+        .screenshots img {
+            border-radius: 10px;
+            object-fit: contain;
+            aspect-ratio: 16/9;
+            width: 100%;
+            height: fit-content;
+            box-shadow: 0px 3px 12px 0px var(--pink);
+            transition: transform 0.3s;
+        }
+
+        @media (min-width: 1135px) {
+            #bp {
+                max-height: 255px;
+            }
+        }
+
+        @media (max-width: 976px) {
+            #bp {
+                height: 135px;
+            }
+        }
+
+        @media(max-width:810px) {
+            .hero-section {
+                flex-wrap: wrap;
+                display: block;
+            }
+
+                .hero-section h1 {
+                    max-width: 100%;
+                    height: auto;
+                    margin-right: 2px;
+                }
+
+            iframe {
+                max-width: 100%;
+                min-width: 300px;
+                max-height: 300px;
+            }
+
+            #bp {
+                height: auto;
+                max-height: 175px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark w-100" style="background-color: var(--dark-purple); color: white;">
+        <a class="logo" href="index.html" style="text-decoration:none;">NMDB</a>
+        <div class="search-bar">
+            <input type="text" placeholder="Search NMDB" id="search" aria-label="Search NMDB">
+        </div>
+        <button class="btn search_btn" type="submit"><span class="icon-search"></span></button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div align="right">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="card-link" href="top100.html" aria-label="Top 100">TOP 100</a></li>
+                    <li class="nav-item"><a class="card-link" href="movie.html" aria-label="Movies">MOVIES</a></li>
+                    <li class="nav-item"><a class="card-link active" href="show.html" aria-label="TV Shows">TV SHOWS</a></li>
+                    <li class="nav-item"><a class="card-link" href="SignIn.html" aria-label="Sign In">SIGN IN</a></li>
+                    <li class="nav-item"><a class="card-link" href="About Us.html" aria-label="About Us">ABOUT US</a></li>
+                    <li class="nav-item"><a class="card-link" href="ContactUs.html" aria-label="Contact Us">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section align="center">
+        <header class="hero-section">
+            <h1 align="left" style="word-break:break-word !important;">
+                Breaking Bad<br>
+                <p id="genre">2008</p>
+                <p id="genre">Crime</p>
+                <p id="genre">Thriller</p>
+                <p id="genre">Drama</p>
+                
+                <p id="bp" style="margin-top: 10px;">
+                    "Breaking Bad" is a gripping drama series that chronicles the transformation of Walter White,
+                    a high school chemistry teacher turned methamphetamine manufacturer.
+                    Created by Vince Gilligan, this critically acclaimed show delves into themes of morality,
+                    ambition, and the consequences of one's actions, making it a landmark in television history.
+                </p>
+            </h1>
+            <iframe width="935" height="526" src="https://www.youtube.com/embed/HhesaQXLuRY"
+                    title="Breaking Bad Trailer (First Season)" frameborder="0" allow="accelerometer;
+        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </header>
+    </section>
+
+    <main>
+        <section class="content-section">
+            <section class="content-section">
+                <section class="content-section">
+                    <h3>About Breaking Bad</h3>
+                    <p>
+                        Breaking Bad is a crime drama television series created and produced by Vince Gilligan.
+                        The show originally aired on AMC for five seasons, from January 20, 2008, to September 29, 2013.
+                        It tells the story of Walter White, a high school chemistry teacher turned methamphetamine manufacturer,
+                        and his former student, Jesse Pinkman.
+                    </p>
+
+                    <h3>Detailed Plot Summary</h3>
+                    <p>
+                        Set and filmed in Albuquerque, New Mexico, Breaking Bad follows Walter White (Bryan Cranston),
+                        an underemployed and depressed high school chemistry teacher who is struggling with a recent diagnosis of stage-three lung cancer.
+                        White turns to a life of crime and partners with a former student, Jesse Pinkman (Aaron Paul),
+                        to produce and distribute methamphetamine to secure his family's financial future before he dies,
+                        while navigating the dangers of the criminal underworld.
+                    </p>
+
+                    <h3>Director's Vision</h3>
+                    <p>
+                        Creator Vince Gilligan wanted to create a series in which the protagonist became the antagonist.
+                        Gilligan said during the show's development, "Television is historically good at keeping its characters in a self-imposed stasis
+                        so that shows can go on for years or even decades. When I realized this, the logical next step was to think,
+                        how can I do a show in which the fundamental drive is toward change?"
+                    </p>
+
+                    <h3>Awards and Nominations</h3>
+                    <ul>
+                        <li>Winner of 16 Primetime Emmy Awards, including Outstanding Drama Series</li>
+                        <li>Received 58 Primetime Emmy Award nominations</li>
+                        <li>Winner of 2 Golden Globe Awards</li>
+                        <li>Listed in the Guinness World Records as the most critically acclaimed show of all time</li>
+                    </ul>
+
+                    <h3>Critical Reception</h3>
+                    <p>
+                        Breaking Bad received widespread critical acclaim and is regarded as one of the greatest television series of all time.
+                        It has a 96% rating on Rotten Tomatoes and a Metacritic score of 87 out of 100. Critics praised the writing,
+                        character development, and performances, particularly those of Bryan Cranston and Aaron Paul.
+                    </p>
+
+                    <h3>Soundtrack and Music</h3>
+                    <p>
+                        The series features a carefully curated soundtrack that enhances the narrative and emotional impact of the show.
+                        Composer Dave Porter created the original score for Breaking Bad, which includes a mix of dramatic and suspenseful compositions.
+                        The soundtrack also includes licensed tracks that add to the atmosphere of various scenes.
+                    </p>
+
+                    <h3>Trivia and Fun Facts</h3>
+                    <ul>
+                        <li>The blue meth used in the show is actually blue rock candy.</li>
+                        <li>Bryan Cranston (Walter White) won four Primetime Emmy Awards for his role in Breaking Bad.</li>
+                        <li>The iconic Breaking Bad RV was originally a studio prop, but it became a symbol of the series.</li>
+                        <li>Jesse Pinkman was originally meant to be killed off during the first season.</li>
+                    </ul>
+
+                    <h3>Memorable Quotes</h3>
+                    <blockquote>"I am not in danger, Skyler. I am the danger. A guy opens his door and gets shot and you think that of me? No. I am the one who knocks!" - Walter White</blockquote><br />
+                    <blockquote>"Yeah, science!" - Jesse Pinkman</blockquote><br />
+                    <blockquote>"Say my name." - Walter White</blockquote>
+                </section>
+            </section>
+
+            <section class="screenshots-section">
+                <h2>Backdrops</h2>
+                <div class="screenshots">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMWI3OWJlZTMtMDU3YS00NmFmLThlNGItNGRhNGViMDJmM2QyXkEyXkFqcGdeQXVyMTk0ODgwNTg@._V1_.jpg" alt="Screenshot 1">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTc3MzYwMjYyM15BMl5BanBnXkFtZTcwMzIyMjM0OA@@._V1_.jpg" alt="Screenshot 2">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTM1MjcyMzIzMl5BMl5BanBnXkFtZTcwOTk4MzAzOA@@._V1_.jpg" alt="Screenshot 3">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNjY3OTcxNDgxOF5BMl5BanBnXkFtZTcwOTU1MDUwOA@@._V1_.jpg" alt="Screenshot 4">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTQwMjk5NDg4MV5BMl5BanBnXkFtZTcwMTgyNDI1Ng@@._V1_.jpg" alt="Screenshot 5">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTM1Njc3OTkwOV5BMl5BanBnXkFtZTcwOTkyMDY1Mw@@._V1_.jpg" alt="Screenshot 6">
+                    <img src="https://wallpapercave.com/wp/wp12099943.jpg" alt="Screenshot 7">
+                    <img src="https://m.media-amazon.com/images/M/MV5BYTczMWEzNTktYmY1Ni00OGUxLWJiNTMtNjcyNzZhYTBlMjdmXkEyXkFqcGdeQXVyOTMyOTQyNzA@._V1_.jpg" alt="Screenshot 8">
+                    <img src="https://m.media-amazon.com/images/M/MV5BOGU0YTA2ZGItNDFjNi00NWM1LTk5NzAtYjFkYTk2MzFhY2YyXkEyXkFqcGdeQXVyNjc0NTIwNTU@._V1_.jpg" alt="Screenshot 9">
+                    <img src="https://m.media-amazon.com/images/M/MV5BOTNlYTAyYTEtYzhmMi00YTY2LWI2ZWQtOGRjMjI4MDE1MmM1XkEyXkFqcGdeQXVyNjg0Nzk2Nzc@._V1_.jpg" alt="Screenshot 10">
+                </div>
+            </section>
+
+            <section class="review-section">
+                <h2>Add Review</h2>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" name="comment" placeholder="Your review" required></textarea>
+
+                    <div class="form-buttons">
+                        <button type="reset">Reset</button>
+                        <button type="submit">Submit & Post</button>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#nav" class="scroll-top">
+            <span class="icon-keyboard_arrow_up"></span>
+        </a>
+        <div class="mb-5">
+            <h3>Contact Us</h3>
+            <div class="footer-social">
+                <a href=""><span class="icon-facebook"></span></a>
+                <a href=""><span class="icon-twitter"></span></a>
+                <a href=""><span class="icon-instagram"></span></a>
+                <a href=""><span class="icon-google"></span></a>
+            </div>
+        </div>
+        <p>&copy; 2024 NMDB. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

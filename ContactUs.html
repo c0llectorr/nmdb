@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" class="smoothscroll">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NMDB Contact Us Page">
+    <meta name="keywords" content="NMDB, Contact Us">
+    <meta name="author" content="Your Name">
+
+    <title>Contact Us - NMDB</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway&display=swap" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet" /> <!--Bootstrap-->
+    <link rel="stylesheet" href="fonts/style.css" type="text/css" />
+    <link rel="stylesheet" href="Consolidated.css" type="text/css">
+
+    <style>
+        .hero-section {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: var(--medium-purple);
+            color: var(--main-text-color);
+            margin: 27px 0 80px 0;
+        }
+
+            .hero-section h1 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 50px;
+                margin-bottom: 20px;
+            }
+
+            .hero-section p {
+                font-size: 20px;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+    </style>
+</head>
+<body>
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark w-100" style="background-color: var(--dark-purple); color: white;">
+        <a class="logo" href="index.html" style="text-decoration:none;">NMDB</a>
+        <div class="search-bar w-75">
+            <input type="text" placeholder="Search NMDB" id="search" aria-label="Search NMDB">
+        </div>
+        <button class="btn search_btn" type="submit"><span class="icon-search"></span></button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div align="right">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="card-link" href="top100.html" aria-label="Top 100">TOP 100</a></li>
+                    <li class="nav-item"><a class="card-link" href="movie.html" aria-label="Movies">MOVIES</a></li>
+                    <li class="nav-item"><a class="card-link" href="show.html" aria-label="TV Shows">TV SHOWS</a></li>
+                    <li class="nav-item"><a class="card-link" href="SignIn.html" aria-label="Sign In">SIGN IN</a></li>
+                    <li class="nav-item"><a class="card-link" href="About Us.html" aria-label="About Us">ABOUT US</a></li>
+                    <li class="nav-item"><a class="card-link active" href="ContactUs.html" aria-label="Contact Us">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Whether you have a question, feedback, or just want to say hello, feel free to reach out.</p>
+    </header>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <h2>Get in Touch</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message" required></textarea>
+
+                <button type="submit" class="contact-button">Send Message</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:support@nmdb.com">support@nmdb.com</a></p>
+            <p>Phone: <a href="tel:+923366575698">+92 336 6575698</a></p>
+            <p>Address: 123 NMDB St, Movie City, FL 12345</p>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#nav" class="scroll-top">
+            <span class="icon-keyboard_arrow_up"></span>
+        </a>
+        <div class="mb-5">
+            <h3>Contact Us</h3>
+            <div class="footer-social">
+                <a href=""><span class="icon-facebook"></span></a>
+                <a href=""><span class="icon-twitter"></span></a>
+                <a href=""><span class="icon-instagram"></span></a>
+                <a href=""><span class="icon-google"></span></a>
+            </div>
+        </div>
+        <p>&copy; 2024 NMDB. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

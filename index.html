@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US" class="smoothscroll">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NMDB Homepage showcasing top movies and TV shows">
+    <meta name="keywords" content="NMDB, movies, TV shows, top 100, new releases">
+    <meta name="author" content="Your Name">
+
+    <title>NMDB Homepage</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway&display=swap" rel="stylesheet" />
+    <link href="bootstrap.min.css" rel="stylesheet" /> <!--Bootstrap-->
+    <link rel="stylesheet" href="fonts/style.css" type="text/css" />
+    <link rel="stylesheet" href="Consolidated.css" type="text/css" />
+
+    <style>
+        body {
+            margin-top: 75px;
+        }
+
+        nav {
+            top: 75px;
+        }
+
+        .navbar {
+            z-index: 2;
+            position: fixed;
+            margin-top: -70px;
+        }
+
+        @media (max-width:920px) {
+            .highlight {
+                flex-direction: column;
+            }
+
+            .highlight-text, .highlight-image {
+                max-width: 100%;
+                text-align: center;
+            }
+
+                .highlight-text h1 {
+                    margin-top: 10px;
+                    margin-left: 0;
+                }
+
+                .highlight-text h2 {
+                    margin-top: 0;
+                    margin-left: 0;
+                }
+
+                .highlight-text div p {
+                    margin-left: 0;
+                    text-align: center;
+                }
+
+                .highlight-text div button {
+                    margin-bottom: 10px;
+                    margin-left: -1.3%;
+                }
+        }
+
+        @media (max-width: 770px) {
+
+            .highlight {
+                flex-direction: column;
+            }
+
+            .highlight-text, .highlight-image {
+                max-width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark w-100">
+        <a class="logo active" href="index.html">NMDB</a>
+        <div class="search-bar">
+            <input type="text" placeholder="Search NMDB" id="search" aria-label="Search NMDB">
+        </div>
+        <button class="btn search_btn" type="submit"><span class="icon-search"></span></button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div align="right">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto" align="right">
+                    <li class="nav-item"><a class="card-link" href="top100.html" aria-label="Top 100">TOP 100</a></li>
+                    <li class="nav-item"><a class="card-link" href="movie.html" aria-label="Movies">MOVIES</a></li>
+                    <li class="nav-item"><a class="card-link" href="show.html" aria-label="TV Shows">TV SHOWS</a></li>
+                    <li class="nav-item"><a class="card-link" href="SignIn.html" aria-label="Sign In">SIGN IN</a></li>
+                    <li class="nav-item"><a class="card-link" href="About Us.html" aria-label="About Us">ABOUT US</a></li>
+                    <li class="nav-item"><a class="card-link" href="ContactUs.html" aria-label="Contact Us">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="highlight">
+            <div class="highlight-text" align="center">
+                <h1>CINEMAGIC</h1><br>
+                <h2>LA LA LAND</h2>
+                <div align="center">
+                    <p>
+                        While navigating their careers in Los Angeles,
+                        A pianist and an actress fall in love while attempting to reconcile their aspirations for the future.
+                    </p>
+                </div>
+                <div align="left"><button onclick="location.href='https://youtu.be/0pdqf4P9MB8?si=eizVKcoJQNmKNvXu'">Watch Trailer</button></div>
+            </div>
+            <div class="highlight-image">
+                <img src="https://image.tmdb.org/t/p/original/7P7NLNX3Rin41PMOAqvhfcFDTNQ.jpg" alt="LA LA LAND">
+            </div>
+        </section>
+
+        <section class="new-releases">
+            <h2>CINEMA ON THE HORIZON</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNTI0MjIwMDAtYWY1ZC00MDUyLWI0MzMtZGNjODRlN2Y3ZmE2XkEyXkFqcGdeQXVyMTM1NjM2ODg1._V1_.jpg" alt="Joker 2">
+                        <div class="overlay">Joker 2</div>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://m.media-amazon.com/images/M/MV5BYzBiNzYxMDYtMTNlZS00ZjM3LTg0MGItOTI1Nzg3YzY4OTllXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg" alt="House of The Dragon">
+                        <div class="overlay">House of The Dragon</div>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://m.media-amazon.com/images/M/MV5BZmU4OGZiODItYzAwYy00MWU3LTg3ODUtN2IwN2Q0NzBhZDUyXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_.jpg" alt="Deadpool & Wolverine">
+                        <div class="overlay">Deadpool & Wolverine</div>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://image.tmdb.org/t/p/original/d7E7Z8Q5sbT3lDGUI1RiNcqOuxj.jpg" alt="Daredevil: Born Again">
+                        <div class="overlay">Daredevil: Born Again</div>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMzJlMDI0YWEtN2I1YS00MDViLWJlYWQtYTkyMGM5NzBmYjI0XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg" alt="Despicable Me 4">
+                        <div class="overlay">Despicable Me 4</div>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://m.media-amazon.com/images/M/MV5BYzhiZDY0OGQtYmJhMi00ODFlLWIyOTktYmFiMzRkNzlhMjRmXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg" alt="The Boys">
+                        <div class="overlay">The Boys</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular">
+            <h2> EDITOR'S CHOICE </h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a href="show.html" target="_parent">
+                        <img src="https://image.tmdb.org/t/p/original/eve7CQBM3QXbU2oNbS73WDPV8FM.jpg" alt="Breaking Bad">
+                        <div class="overlay">Breaking Bad</div>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://image.tmdb.org/t/p/original/fX44bgxKQsS4P4ewb2iotHveEkn.jpg" alt="Interstellar">
+                        <div class="overlay">Interstellar</div>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTgzMjA4MjY0MV5BMl5BanBnXkFtZTgwNTAzNTM1NzM@._V1_.jpg" alt="Game of Thrones">
+                        <div class="overlay">Game of Thrones</div>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://image.tmdb.org/t/p/original/aIiA756jSKbVxmLp9QYn8daeC76.jpg" alt="The Batman">
+                        <div class="overlay">The Batman</div>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://image.tmdb.org/t/p/original/dC7jkj2g1aU8sxKqM6D4g44xA6w.jpg" alt="True Detective">
+                        <div class="overlay">True Detective</div>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMjI3OTcxZDAtOTc5OS00ZmViLTk0YjctYzBjZDY4NTdiYzhkXkEyXkFqcGdeQXVyNDIyNjA2MTk@._V1_.jpg" alt="The Wolf of Wall Street.">
+                        <div class="overlay">The Wolf of Wall Street</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#" class="scroll-top">
+            <span class="icon-keyboard_arrow_up"></span>
+        </a>
+        <div class="mb-5">
+            <h3>Contact Us</h3>
+            <div class="footer-social">
+                <a href=""><span class="icon-facebook"></span></a>
+                <a href=""><span class="icon-twitter"></span></a>
+                <a href=""><span class="icon-instagram"></span></a>
+                <a href=""><span class="icon-google"></span></a>
+            </div>
+        </div>
+        <p>&copy; 2024 NMDB. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

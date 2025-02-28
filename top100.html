@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" class="smoothscroll">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NMDB Top 100 Movies and TV Shows">
+    <meta name="keywords" content="NMDB, movies, TV shows, top 100">
+    <meta name="author" content="Your Name">
+
+    <title>NMDB Top 100</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway&display=swap" rel="stylesheet" />
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css" /> <!--Bootstrap-->
+    <link rel="stylesheet" href="Consolidated.css" type="text/css" />
+    <link rel="stylesheet" href="fonts/style.css" type="text/css" />
+
+    <style>
+        .hero-section {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: var(--medium-purple);
+            color: var(--main-text-color);
+            margin: 27px 0 80px 0;
+        }
+
+            .hero-section h1 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 50px;
+                margin-bottom: 20px;
+            }
+
+            .hero-section p {
+                font-size: 20px;
+                max-width: 600px;
+                margin: 0 auto;
+                overflow: hidden !important;
+            }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: var(--pink);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark w-100">
+        <a class="logo" href="index.html">NMDB</a>
+        <div class="search-bar w-75">
+            <input type="text" placeholder="Search NMDB" id="search" aria-label="Search NMDB">
+        </div>
+        <button class="btn search_btn" type="submit"><span class="icon-search"></span></button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div align="right">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="card-link active" href="top100.html" aria-label="Top 100">TOP 100</a></li>
+                    <li class="nav-item"><a class="card-link" href="movie.html" aria-label="Movies">MOVIES</a></li>
+                    <li class="nav-item"><a class="card-link" href="show.html" aria-label="TV Shows">TV SHOWS</a></li>
+                    <li class="nav-item"><a class="card-link" href="SignIn.html" aria-label="Sign In">SIGN IN</a></li>
+                    <li class="nav-item"><a class="card-link" href="About Us.html" aria-label="About Us">ABOUT US</a></li>
+                    <li class="nav-item"><a class="card-link" href="ContactUs.html" aria-label="Contact Us">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <h1>Top 100 Movies and TV Shows</h1>
+        <p>Explore the best movies and TV shows curated just for you.</p>
+    </header>
+
+    <main>
+        <section id="top-movies">
+            <h2>MOVIES</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMzU5NWM2NmMtNDdlOC00MDAyLWE1MTUtYWEzMDk4ZTU3YmQ5XkEyXkFqcGdeQXVyMTE4OTc3NjA3._V1_.jpg" alt="The Shawshank Redemption">
+                        <div class="overlay">
+                            <h3>The Shawshank Redemption</h3>
+                            <p>Rating: 9.3/10</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Movie Item -->
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTBmZjRiN2YtMTYxZS00NzVhLTkyZTctNzc2MGYxYTg4MGE2XkEyXkFqcGdeQXVyMTU1MDczNjU1._V1_.jpg" alt="The Shawshank Redemption">
+                        <div class="overlay">
+                            <h3>Whiplash</h3>
+                            <p>Rating: 9.3/10</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Add more movie items here -->
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMjE3YWU1M2EtZDM5ZS00YTNhLWI0MmEtY2FkOGM1ZjVjMDg1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg" alt="The Shawshank Redemption">
+                        <div class="overlay">
+                            <h3>The Pianist</h3>
+                            <p>Rating: 8.5/10</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTY3NWZlOWItZjM3ZC00OWViLTg1ZGItNjNiZWJlMzRjODVlXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg" alt="The Shawshank Redemption">
+                        <div class="overlay">
+                            <h3>Dune: Part Two</h3>
+                            <p>Rating: 8.6/10</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNDcwZjg1NTMtMzZjNS00ZjQ5LTg4N2ItMzQyMzlmNmJjNDdmXkEyXkFqcGdeQXVyODIyOTEyMzY@._V1_.jpg" alt="The Shawshank Redemption">
+                        <div class="overlay">
+                            <h3>Dune</h3>
+                            <p>Rating: 8.0/10</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://image.tmdb.org/t/p/original/1UgqxtiJNxRzPeqs9pztWBUJd7k.jpg" alt="The Shawshank Redemption">
+                        <div class="overlay">
+                            <h3>Inception</h3>
+                            <p>Rating: 8.8/10</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://image.tmdb.org/t/p/original/2jVOvPaQkRjt92oTr8zzno4zuz7.jpg" alt="The Shawshank Redemption">
+                        <div class="overlay">
+                            <h3>Fight Club</h3>
+                            <p>Rating: 8.8/10</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://m.media-amazon.com/images/M/MV5BOWMzYWEyNjUtYmMxYS00MmRlLWI2MzUtNjNlNTFmMGZlNWNkXkEyXkFqcGdeQXVyMTQwODQwMzAy._V1_.jpg" alt="The Shawshank Redemption">
+                        <div class="overlay">
+                            <h3>Seven</h3>
+                            <p>Rating: 8.6/10</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://m.media-amazon.com/images/M/MV5BYjc4ZWZiZmUtMTY1OS00ODRmLWJiODMtNzY4ZjBiZGY0YjQwXkEyXkFqcGdeQXVyMTY1MTU3NDY5._V1_.jpg" alt="The Shawshank Redemption">
+                        <div class="overlay">
+                            <h3>Spider-Man: Across The Spider-Verse</h3>
+                            <p>Rating: 8.6/10</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTU0NTg5MzM3N15BMl5BanBnXkFtZTgwNzI0ODAxMTI@._V1_.jpg" alt="Split">
+                        <div class="overlay">
+                            <h3>Split</h3>
+                            <p>Rating: 7.5/10</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <br /><br /><br />
+
+        <section id="top-tv-shows">
+            <h2>TV SHOWS</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a href="show.html">
+                        <img src="https://image.tmdb.org/t/p/original/ztkUQFLlC19CCMYHW9o1zWhJRNq.jpg" alt="Breaking Bad">
+                        <div class="overlay">
+                            <h3>Breaking Bad</h3>
+                            <p>Rating: 9.5/10</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- TV Show Item -->
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNzQwOTcwMzIwN15BMl5BanBnXkFtZTgwMjYxMTA0NjE@._V1_.jpg" alt="Narcos">
+                        <div class="overlay">
+                            <h3>Narcos</h3>
+                            <p>Rating: 8.9/10</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://m.media-amazon.com/images/M/MV5BYTM3M2U5NmQtYjcyYy00NTM2LWIyMWMtODhmOTBkY2ZjZmViXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_.jpg" alt="Band of Brothers">
+                        <div class="overlay">
+                            <h3>Band of Brothers</h3>
+                            <p>Rating: 9.4/10</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://m.media-amazon.com/images/M/MV5BZTFlMzY5YjAtMTJmZC00YjQ0LWJlYWItYzhlMjRiZWJiOWFjXkEyXkFqcGdeQXVyMTAzOTAxMzg4._V1_.jpg" alt="Chernobyl">
+                        <div class="overlay">
+                            <h3>Chernobyl</h3>
+                            <p>Rating: 9.3/10</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://m.media-amazon.com/images/M/MV5BYjNiYmNlNGEtODUxMy00NWUyLThmMGQtMjhiYWEzYzVhZDlhXkEyXkFqcGdeQXVyODk2ODI3MTU@._V1_.jpg" alt="COSMOS">
+                        <div class="overlay">
+                            <h3>COSMOS</h3>
+                            <p>Rating: 9.2/10</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://m.media-amazon.com/images/M/MV5BOWJhYjdjNWEtMWFmNC00ZjNkLThlZGEtN2NkM2U3NTVmMjZkXkEyXkFqcGc@._V1_.jpg" alt="Arcane">
+                        <div class="overlay">
+                            <h3>Arcane</h3>
+                            <p>Rating: 9.0/10</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://image.tmdb.org/t/p/original/5GXdp7KKJYW6kwzUthKFVu4JAMn.jpg" alt="Bojack Horseman">
+                        <div class="overlay">
+                            <h3>Bojack Horseman</h3>
+                            <p>Rating: 8.8/10</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://image.tmdb.org/t/p/original/gOkmyEfCSupwAnFKGOj8doGRrtQ.jpg" alt="Hannibal">
+                        <div class="overlay">
+                            <h3>Hannibal</h3>
+                            <p>Rating: 8.5/10</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMDFlOTBhYTQtNmMzNi00MmQyLWJjOTgtNWM4Y2JmM2U1ZGExXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg" alt="Mr. Robot">
+                        <div class="overlay">
+                            <h3>Mr. Robot</h3>
+                            <p>Rating: 8.5/10</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <a href="">
+                        <img src="https://m.media-amazon.com/images/M/MV5BYTkxMDc2OTUtNjAyYi00NDUyLWE4OGMtODQwMjY5ZmRmOTMwXkEyXkFqcGdeQXVyMjM3NjM3Mg@@._V1_.jpg" alt="The Crowded Rooom">
+                        <div class="overlay">
+                            <h3>The Crowded Rooom</h3>
+                            <p>Rating: 8.5/10</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <br /><br />
+
+          <footer>
+              <a href="#nav" class="scroll-top">
+                  <span class="icon-keyboard_arrow_up"></span>
+              </a>
+              <div class="mb-5">
+                  <h3>Contact Us</h3>
+                  <div class="footer-social">
+                      <a href=""><span class="icon-facebook"></span></a>
+                      <a href=""><span class="icon-twitter"></span></a>
+                      <a href=""><span class="icon-instagram"></span></a>
+                      <a href=""><span class="icon-google"></span></a>
+                  </div>
+              </div>
+              <p>&copy; 2024 NMDB. All rights reserved.</p>
+          </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
